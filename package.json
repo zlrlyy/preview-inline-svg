@@ -1,0 +1,73 @@
+{
+  "name": "preview-inline-svg",
+  "displayName": "Preview Inline SVG",
+  "description": "Preview inline SVG",
+  "version": "0.0.1",
+  "publisher": "zhenglr",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-design/ant-design"
+  },
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.previewInlineSvg",
+        "title": "Preview Inline SVG"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "inlineSvgPreview",
+          "name": "Inline SVG Preview",
+          "view": "Inline SVG Preview"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "extension.previewInlineSvg",
+        "key": "ctrl+alt+v",
+        "mac": "cmd+alt+v",
+        "when": "editorHasSelection"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "extension.previewInlineSvg",
+          "when": "editorHasSelection",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.97.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "eslint": "^9.19.0",
+    "typescript": "^5.7.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
