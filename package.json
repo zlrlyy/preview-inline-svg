@@ -2,7 +2,7 @@
   "name": "preview-inline-svg",
   "displayName": "Preview Inline SVG",
   "description": "Preview inline SVG",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publisher": "zhenglr",
   "icon": "icon.png",
   "license": "MIT",

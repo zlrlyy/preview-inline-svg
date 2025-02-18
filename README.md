@@ -9,7 +9,7 @@ SVG Previewer is a Visual Studio Code extension that allows developers to previe
 1. Open an HTML, JSX, or TSX file that contains inline SVG.
 2. Select the SVG code you want to preview.
    ![Command](https://raw.githubusercontent.com/zlrlyy/preview-inline-svg/main/assets/command.png)
-3. Right-click on the selected SVG and choose Preview Inline SVG from the context menu, or use the shortcut Ctrl+Alt+P(Cmd+Alt+P) to preview the SVG.
+3. Right-click on the selected SVG and choose Preview Inline SVG from the context menu, or use the shortcut Ctrl+Alt+V(Cmd+Alt+V) to preview the SVG.
    ![Preview](https://raw.githubusercontent.com/zlrlyy/preview-inline-svg/main/assets/preview.png)
 
 ## Contributing
